@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ProyectoFigma"
         tools:targetApi="31">
         <activity
+            android:name=".blogs"
+            android:exported="false" />
+        <activity
+            android:name=".planes_de_ejercicios"
+            android:exported="false" />
+        <activity
             android:name=".Perfil_de_usuario"
             android:exported="false" />
         <activity
