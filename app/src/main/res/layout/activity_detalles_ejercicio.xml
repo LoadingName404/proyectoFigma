@@ -34,6 +34,7 @@
                     android:id="@+id/button"
                     android:layout_width="106dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="24dp"
                     android:text="Regresar" />
 
                 <ImageView
