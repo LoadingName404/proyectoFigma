@@ -89,7 +89,17 @@ public class planes_de_ejercicios extends AppCompatActivity {
                             listado.add(p);
                             adapter.add(p);
                             adapter.notifyDataSetChanged();
+
+                            // Guardar el nuevo plan en la base de datos
+                            guardarPlanEnDB(p);
                         }
+                    }
+
+                    private void guardarPlanEnDB(plan p) {
+                        planDB db = new planDB(planes_de_ejercicios.this);
+                        db.open();
+                        db.guardarPlan(p);
+                        db.close();
                     }
                 }
         );

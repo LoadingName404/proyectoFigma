@@ -16,6 +16,9 @@ public class add_plan extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_plan);
 
+        final long id = System.currentTimeMillis(); // Asignar un valor único a la id
+
+
         Button btnAddPlan = (Button) findViewById(R.id.btnAddPlan);
 
         btnAddPlan.setOnClickListener(new View.OnClickListener() {
@@ -45,7 +48,7 @@ public class add_plan extends AppCompatActivity {
                         txtPlanDescripcion.setError("Campo requerido");
                     }
                 } else {
-                    plan p = new plan(nombre, descripcion, "https://i.imgur.com/1QZzJ9o.png");
+                    plan p = new plan(String.valueOf(id), nombre, descripcion);
 
                     Intent intent = new Intent();
                     intent.putExtra("plan", p);

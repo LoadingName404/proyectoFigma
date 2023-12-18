@@ -8,6 +8,7 @@ public class plan implements Serializable {
     private String descripcion;
 
     public plan(String id, String nombre, String descripcion) {
+        this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
     }

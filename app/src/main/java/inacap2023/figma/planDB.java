@@ -1,5 +1,6 @@
 package inacap2023.figma;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -77,5 +78,13 @@ public class planDB {
             db.execSQL("DROP TABLE IF EXISTS " + DATABASE_NAME);
             onCreate(db);
         }
+    }
+
+    public void guardarPlan(plan p) {
+        ContentValues values = new ContentValues();
+        values.put(KEY_NOMBRE, p.getNombre());
+        values.put(KEY_DESCRIPCION, p.getDescripcion());
+
+        ourDatabase.insert(DATABASE_TABLE, null, values);
     }
 }
