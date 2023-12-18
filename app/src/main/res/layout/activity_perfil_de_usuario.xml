@@ -29,6 +29,13 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="106dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="24dp"
+                        android:text="Regresar" />
+
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/constraintLayout"
                         android:layout_width="match_parent"
