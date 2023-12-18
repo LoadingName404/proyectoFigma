@@ -3,14 +3,13 @@ package inacap2023.figma;
 import java.io.Serializable;
 
 public class plan implements Serializable {
+    private String id;
     private String nombre;
     private String descripcion;
-    private String imagen;
 
-    public plan(String nombre, String descripcion, String imagen) {
+    public plan(String id, String nombre, String descripcion) {
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.imagen = imagen;
     }
 
     public String toString() {
@@ -31,13 +30,5 @@ public class plan implements Serializable {
 
     public void setDescripcion(String descripcion) {
         this.descripcion=descripcion;
-    }
-
-    public String getImagen() {
-        return imagen;
-    }
-
-    public void setImagen(String imagen) {
-        this.imagen=imagen;
     }
 }

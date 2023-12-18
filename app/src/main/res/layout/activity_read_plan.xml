@@ -7,6 +7,13 @@
     android:orientation="vertical"
     tools:context=".read_plan">
 
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:background="?attr/actionModeCloseDrawable" />
+
     <TextView
         android:text="Plan: "
         android:layout_width="wrap_content"

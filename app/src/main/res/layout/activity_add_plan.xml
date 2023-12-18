@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".add_plan">
+
+    <Button
+        android:id="@+id/btnAddPlan"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:background="?attr/homeAsUpIndicator" />
+
+    <EditText
+        android:id="@+id/txtPlanNombre"
+        android:hint="@string/hintPlanNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/txtPlanDescripcion"
+        android:hint="@string/hintPlanDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnGuardarPlan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnGuardarPlan"/>
+
+</LinearLayout>
